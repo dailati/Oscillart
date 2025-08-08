@@ -1,17 +1,21 @@
-@font-face {
-    font-family: 'BuildFont';
-    src: url('fonts/build.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+
+.fredoka{
+  /* FONT */
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "width" 100;
 }
 
 #canvas {
-    border: 5px solid black;
+    border: none;
     height: 500px;
     width: 900px;
+    margin: auto;
     margin-bottom: 1em;
     margin-top: 1em;
     background-color: white;
+    display: block;
 }
 
 #container {
@@ -37,12 +41,42 @@ body {
     gap: 20px;
 }
 
+#input {
+    font-family: 'Fredoka', sans-serif;
+    border:none;
+}
 #title {
     text-align: center;
     font-size: 2rem;
-    font-family:'BuildFont', sans-serif;
+    font-family:'Fredoka', sans-serif;
 }
 
-#submit {
-    font-family: 'BuildFont', sans-serif;
+#submit, #record {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(lightpink, white);
+    border: none;
+    transition: all 0.5s ease;
+}
+
+#color1 {
+    background-image: linear-gradient(lightpink, white);
+    border: none;
+    transition: all 0.3s ease !important;
+}
+
+#color2 {
+    background-image: linear-gradient(lightpink, white);
+    border: none;
+    transition: all 1s ease;
+}
+
+#submit:hover, #record:hover {
+    font-size: large;
+}
+
+#color1:hover, #color2:hover {
+    border-radius: .2rem;
+    border-width: large;
+    background-image: radial-gradient(white, pink) !important;
 }
