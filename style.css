@@ -1,10 +1,9 @@
-    @font-face {
-      font-family: 'YourCustomFont'; /* Choose a name for your font */
-      src: url('../fonts/YourCustomFont-Regular.woff2') format('woff2'),
-           url('../fonts/YourCustomFont-Regular.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }
+@font-face {
+    font-family: 'BuildFont';
+    src: url('fonts/build.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 #canvas {
     border: 5px solid black;
@@ -41,5 +40,9 @@ body {
 #title {
     text-align: center;
     font-size: 2rem;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'BuildFont', sans-serif;
+}
+
+#submit {
+    font-family: 'BuildFont', sans-serif;
 }
