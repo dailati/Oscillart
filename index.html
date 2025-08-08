@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+   <div id="container">
+    <div id="title">
+        <h1>Welcome to Oscillart!</h1>
+            </div>
+<canvas id="canvas">
+   </canvas>
+   <div id="input-form">
+    <input type="text" id="input" placeholder="Type a note on the scale">
+        <button id="submit" onclick="handle()">SUBMIT</button>
+        <div>
+<input type="color" id="color1" value="#ff0000">
+<input type="color" id="color2" value="#ff0000">
+        </div>
+        <input type="range" min="1" max="100" value="100" id="vol-slider">
+        <button id="record" onclick="toggle()">START RECORDING</button>
+    </div>
+</div> 
+<script src="main.js"></script>
+</body>
+</html>

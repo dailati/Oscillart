@@ -1,0 +1,45 @@
+    @font-face {
+      font-family: 'YourCustomFont'; /* Choose a name for your font */
+      src: url('../fonts/YourCustomFont-Regular.woff2') format('woff2'),
+           url('../fonts/YourCustomFont-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+#canvas {
+    border: 5px solid black;
+    height: 500px;
+    width: 900px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: white;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: radial-gradient(circle at center, lightpink, white);
+}
+
+#input-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 30px;
+    margin: auto;
+    gap: 20px;
+}
+
+#title {
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+}
